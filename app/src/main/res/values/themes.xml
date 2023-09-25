@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.JutsuPro" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">#4CAF50</item>
@@ -6,9 +6,15 @@
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">#4CAF50</item>
-        <item name="colorSecondaryVariant">#4CAF50</item>
+        <item name="colorSecondaryVariant">#337535</item>
         <item name="colorOnSecondary">@color/white</item>
     </style>
 
     <style name="Theme.JutsuPro" parent="Base.Theme.JutsuPro" />
+
+    <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#162C17</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.JutsuPro</item>
+    </style>
 </resources>
