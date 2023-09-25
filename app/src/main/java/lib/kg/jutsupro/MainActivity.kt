@@ -5,7 +5,6 @@ import android.annotation.SuppressLint
 import android.os.Build
 import android.os.Bundle
 import android.webkit.WebViewClient
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
@@ -41,7 +40,6 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
             if (webView.canGoBack()) webView.goBack() else super.onBackPressed()
         }
-        Toast.makeText(this, "Загрузка...", Toast.LENGTH_SHORT).show()
     }
 
     private fun checkInternet() {
